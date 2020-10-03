@@ -22,3 +22,10 @@ gulp.task("copy", gulp.series("bundle"), function () {
 gulp.task("default",gulp.series("copy"),function(){
    console.log("Gulp completed..."); 
 });
+gulp.task('serveprod', function() {
+    connect.server({
+      root: [server.js],
+      port: process.env.PORT || 7777, 
+      livereload: false
+    });
+  });
