@@ -9,6 +9,8 @@
   },
   "scripts": {
     "start": "node server/server.js gulp",
+    "build": "gulp",
+    "postinstall": "gulp default",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
