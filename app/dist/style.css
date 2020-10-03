@@ -1,0 +1,30 @@
+.bt1{
+    background-color:  rgb(47, 41, 41) !important;
+    color: rgb(255, 230, 54);
+}
+.sh1{
+    box-shadow: 0 0 10px 10px #d3d1d1 !important;
+}
+.cc1{
+    color: rgb(255, 230, 54) !important;
+    
+
+}
+/* .cc1:hover, */
+.bt1:hover{
+    color: white !important;
+}
+.cc2{
+    color:rgb(47, 41, 41) !important;
+    /* width: 1px !important;
+    height: 1px !important; */
+
+}
+.img1{
+    background-image: url('./11.jpg') !important;
+}
+div>.container
+/* >.row.col-md-3>.container */
+{
+    background-image: url('./11.jpg') !important;
+}
