@@ -8,10 +8,9 @@
     "npm": "6.14.6"
   },
   "scripts": {
-    "start": "node server/server.js gulp",
+    "start": "nodemon server.js gulp",
     "build": "gulp",
     "heroku-postbuild": "gulp",
-  
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
