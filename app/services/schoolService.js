@@ -4,9 +4,9 @@ var promise = require("es6-promise");
 var resourceUrl = "http://localhost:8000/api/schools";
 
 
-// var getUrl = window.location;
-// var resourceUrl = getUrl .protocol + "//" + getUrl.host + "/api/schools/" + getUrl.pathname.split('/')[1];
-// console.log(resourceUrl)
+var getUrl = window.location;
+var resourceUrl = getUrl .protocol + "//" + getUrl.host + "/api/schools/" + getUrl.pathname.split('/')[1];
+console.log(resourceUrl)
 
 
 
