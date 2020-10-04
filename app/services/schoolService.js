@@ -1,7 +1,14 @@
 
 var $ = require("jquery");
 var promise = require("es6-promise");
-var resourceUrl = "http://localhost:7777/api/schools";
+var resourceUrl = "http://localhost:8000/api/schools";
+
+
+var getUrl = window.location;
+var resourceUrl = getUrl .protocol + "//" + getUrl.host + "/api/schools/" + getUrl.pathname.split('/')[1];
+console.log(resourceUrl)
+
+
 
 module.exports = {
     addSchool: function (school) {

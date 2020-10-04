@@ -25,7 +25,7 @@ gulp.task("default",gulp.series("copy"),function(){
 gulp.task('serveprod', function() {
     connect.server({
       root: [server.js],
-      port: process.env.PORT || 7777, 
+      port: process.env.PORT || 8000, 
       livereload: false
     });
   });
