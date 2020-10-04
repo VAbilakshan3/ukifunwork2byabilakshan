@@ -4,9 +4,9 @@ var promise = require("es6-promise");
 var resourceUrl = "http://localhost:8000/api/schools";
 
 
-var getUrl = window.location;
-var resourceUrl = getUrl .protocol + "//" + getUrl.host + "/api/schools/" + getUrl.pathname.split('/')[1];
-console.log(resourceUrl)
+// var getUrl = window.location;
+// var resourceUrl = getUrl .protocol + "//" + getUrl.host + "/api/schools/" + getUrl.pathname.split('/')[1];
+// console.log(resourceUrl)
 
 
 
@@ -41,7 +41,7 @@ module.exports = {
         var Promise = promise.Promise;
         return new Promise(function (resolve, reject) {
             $.ajax({
-                url: resourceUrl +"/index.html/"+ school._id,
+                url: resourceUrl +"/"+ school._id,
                 method: "DELETE",
                 dataType: "json",
                 success: resolve,
