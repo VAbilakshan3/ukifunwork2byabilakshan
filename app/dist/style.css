@@ -22,6 +22,15 @@
 }
 .img1{
     background-image: url('./11.jpg') !important;
+    max-width: 600px !important;
+    max-height: 400px !important;
+}
+@media screen and (max-width: 600px){
+    .img1{
+        background-image: url('./11.jpg') !important;
+        max-width: 350px !important;
+        max-height: 250px !important;
+    }
 }
 div>.container
 /* >.row.col-md-3>.container */

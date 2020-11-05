@@ -8,18 +8,18 @@ module.exports = createReactClass({
        return(<div className="container-fluid  ">
 
            <div className="row">
-           <div className="col-md-6 offset-3 "><br/>
+           <div className="col-lg-6 col-md-6 col-sm-12 "><br/>
            <br/>
-              <img className="img1"width="600px" height="400px" src="https://softwaremanagerblog.com/wp-content/uploads/2019/06/consulting-2204253_1280-e1561028650564-1024x611.png"/>
+              <img className="img1" src="https://softwaremanagerblog.com/wp-content/uploads/2019/06/consulting-2204253_1280-e1561028650564-1024x611.png"/>
            </div>
-                <div className="col-md-6 offset-3">
+                <div className="col-lg-6 col-md-6 col-sm-12">
                     <AddSchool />
                 </div>
                 </div>
                 <div className="row">
-                <div className="col-md-3"></div>
+                <div className="col-lg-3 col-md-3 col-sm-0"></div>
                     
-                <div className="col-md-6">
+                <div className="col-lg-6 col-md-6 col-sm-12">
                     {
                         this.props.schools.map(function(s,index){
                             return(

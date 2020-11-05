@@ -35,19 +35,19 @@ module.exports = createReactClass({
             <form className="form" onSubmit={this.addSchool}>
                 <div className=" panel-body">
                     <label className="control-label" htmlFor="name">Event :</label>
-                    <input type="text" className="form-control" id="name" name="name" value={this.state.name} onChange={this.handleInputChange} placeholder="Type your Event" />                    
+                    <input type="text" className="form-control" id="name" name="name" value={this.state.name} onChange={this.handleInputChange} placeholder="Type your Event" required />                    
                 </div>
                 <div className=" panel-body">
                     <label className="control-label" htmlFor="tagline">The Reason:</label>
-                    <input type="text" className="form-control" id="tagline" name="tagline" value={this.state.address} onChange={this.handleInputChange} placeholder="Type your Reason" />                    
+                    <input type="text" className="form-control" id="tagline" name="tagline" value={this.state.address} onChange={this.handleInputChange} placeholder="Type your Reason" required/>                    
                 </div>
                 <div className="panel-body">
                     <label className="control-label" htmlFor="place">Event Description:</label>
-                    <input type="text" className="form-control" id="place" name="place" value={this.state.place} onChange={this.handleInputChange} placeholder="Type your Description" />                    
+                    <input type="text" className="form-control" id="place" name="place" value={this.state.place} onChange={this.handleInputChange} placeholder="Type your Description" required/>                    
                 </div>
                 <div className=" panel-body">
                     <label className="control-label" htmlFor="date">Event Date:</label>
-                    <input type="text" className="form-control" id="date" name="date" value={this.state.date} onChange={this.handleInputChange} placeholder="Type your Date" />                    
+                    <input type="text" className="form-control" id="date" name="date" value={this.state.date} onChange={this.handleInputChange} placeholder="Type your Date" required/>                    
                 </div>
                 <div className="form-group panel-body">
                     <button className="btn bt1 btn-block" type="submit">Add Event</button>
